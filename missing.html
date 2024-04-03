@@ -15,18 +15,31 @@
             box-sizing: border-box;
         }
 
+        svg {
+            max-width: 100%;
+        }
+
+        html {
+            height: 100%;
+        }
+
         body {
+            min-height: 100%;
             margin: 0;
             font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
         }
 
         .page {
-            min-height: 100vh;
-            min-height: 100svh;
+            flex-grow: 1;
             padding-bottom: 32px;
+            display: flex;
+            flex-direction: column;
         }
 
         .header {
+            width: 100%;
             max-width: 964px;
             margin: 0 auto;
             margin-bottom: 16px;
@@ -116,6 +129,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            flex-grow: 1;
         }
 
         .info .content {
@@ -294,6 +308,10 @@
                 padding-left: 40px;
             }
 
+            .info {
+                flex-grow: 1;
+            }
+
             .decor.mob {
                 display: none;
             }
@@ -307,7 +325,8 @@
             }
 
             .info .content {
-                margin-bottom: 56px;
+                margin-top: auto;
+                margin-bottom: auto;
                 display: flex;
                 flex-direction: row;
             }
@@ -361,7 +380,7 @@
             лотерея</h1>
     </header>
     <main class="page">
-        <section class="warning">
+        <!-- <section class="warning">
             <div class="content">
                 <div class="descr kz">
                     <h2>Назар аударыңыз!</h2>
@@ -384,7 +403,7 @@
                         и&nbsp;понимание! Следите за&nbsp;обновлениями в&nbsp;наших социальных сетях.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="info">
             <div class="content">
                 <div class="descr">
@@ -854,9 +873,9 @@
                             fill="#FC0" />
                     </g>
                     <defs>
-                        <clipPath id="a">
+                        <clippath id="a">
                             <path fill="#fff" d="M0 0h911.341v540.793H0z" />
-                        </clipPath>
+                        </clippath>
                     </defs>
                 </svg>
             </div>
